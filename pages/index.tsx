@@ -114,7 +114,7 @@ export default function Home() {
                   ) : (
                     <>
                       <div className="flex flex-col w-1/2">
-                        <h1 className="mb-10 text-3xl font-bold">Mint One</h1>
+                        <h1 className="mb-10 text-3xl font-bold mx-auto">Mint</h1>
                         <button
                           onClick={startMint}
                           disabled={isMinting}
@@ -122,10 +122,6 @@ export default function Home() {
                         >
                           {isMinting ? "loading" : "mint 1"}
                         </button>
-                      </div>
-                      <div className="flex flex-col w-1/2">
-                        <h1 className="mb-10 text-3xl font-bold">Mint Many</h1>
-                        <MintMany />
                       </div>
                     </>
                   )}
